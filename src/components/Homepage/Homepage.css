@@ -1,0 +1,15 @@
+.Homepage-ul{
+    list-style-type:none;
+    display: flex;
+    justify-content: space-between;
+    height: 79px;
+    width: 45%;
+    margin: auto;
+}
+
+.Homepage-li{
+    display: inline;
+    float: left;
+  height: inherit;
+  width: 20%;
+}
