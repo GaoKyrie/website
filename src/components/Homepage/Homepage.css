@@ -12,6 +12,7 @@
     float: left;
   height: inherit;
   width: 20%;
+  margin-top: 3vh;
 }
 
 .Homepage-Header{
@@ -25,3 +26,18 @@ a{
     font-weight: bold;
 }
 
+.fl{float: left;}
+.logo{
+    width:85%;
+    
+}
+
+.logo{ width: 15rem; height:auto;margin-top: 1rem;}
+
+.nav_t ul.header-navbar-level1{
+    display: flex;
+    justify-content: space-between;
+    height: 79px;
+    width: 45%;
+    margin: auto;
+  }
