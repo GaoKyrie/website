@@ -4,11 +4,12 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Homepage from './components/Homepage/Homepage';
-import TestPage from './components/Testpage/Testpage';
+import Zmd from './components/Zmd/Zmd';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Homepage />
+    <Zmd />
   </React.StrictMode>
 );
 
