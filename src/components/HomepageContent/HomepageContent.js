@@ -1,6 +1,5 @@
 import './HomepageContent.css'
 
-
 function HomepagContent() {
     return (
         <div>
@@ -13,19 +12,19 @@ function HomepagContent() {
             <div>
                 <ul class="accordion-container">
                     <li class="accordion-item">
-                        <p class="accordion-title">背景1</p>
+                        <p class="accordion-title">产品1</p>
                     </li>
                     <li class="accordion-item">
-                        <p class="accordion-title">背景1</p>
+                        <p class="accordion-title">产品2</p>
                     </li>
                     <li class="accordion-item">
-                        <p class="accordion-title">背景1</p>
+                        <p class="accordion-title">产品3</p>
                     </li>
                     <li class="accordion-item">
-                        <p class="accordion-title">背景1</p>
+                        <p class="accordion-title">产品4</p>
                     </li>
                     <li class="accordion-item">
-                        <p class="accordion-title">背景1</p>
+                        <p class="accordion-title">产品5</p>
                     </li>
                 </ul>
             </div>

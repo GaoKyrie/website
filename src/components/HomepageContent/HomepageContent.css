@@ -11,6 +11,7 @@
   }
 
   .accordion-container {
+    padding: inherit; /*从父元素继承padding属性，在此处保证两边不留白*/
     overflow: hidden;
     display: flex;
     justify-content: flex-start;
@@ -18,9 +19,9 @@
     .accordion-item {
       list-style: none;
       width: 100%;
-      height: auto;
+      height: 500px;
       transition: width 0.5s;
-      background-image: url('../../assets/logo.png');
+      background-image: url('../../assets/csstrick1.jpg');
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center center;
@@ -57,9 +58,54 @@
     }
   }
 
-  .l1{
-    background-image: url('../../assets/logo.png');
-    background-color: black;
-    background-size: cover;
-    background-repeat: no-repeat; 
-  }
+  .accordion-container {
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start
+}
+accordion-container .accordion-item[data-v-36fadeda] {
+    list-style: none;
+    height: 500px;
+    transition: width .5s;
+    background-repeat: no-repeat;
+    background-size: 500px;
+    background-position: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+.accordion-container .accordion-item:not(:hover) {
+    width: 20%
+}
+
+.accordion-container .accordion-item:hover {
+    width: 500px
+}
+
+.accordion-container .accordion-item:hover:after {
+    opacity: 1
+}
+
+.accordion-container .accordion-item:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(0,0,0,.4);
+    z-index: 1;
+    opacity: 0;
+    transition: opacity .5s
+}
+
+.accordion-container .accordion-item .accordion-title {
+    color: #fff;
+    font-size: 18px;
+    z-index: 2
+}
+
+

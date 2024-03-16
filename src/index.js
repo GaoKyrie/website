@@ -7,16 +7,18 @@ import Homepage from './components/Homepage/Homepage';
 import Zmd from './components/Zmd/Zmd';
 import Footer from './components/Footer/Footer';
 import HomepagContent from './components/HomepageContent/HomepageContent';
-
+import Productpage from './components/Productpage/Productpage';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+   
     <Homepage />
     <Zmd />
     <HomepagContent />
     <Footer />
+    
     
   </React.StrictMode>
 );
