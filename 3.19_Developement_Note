@@ -1,0 +1,3 @@
+由于在index.js文件内实现了路由的功能，所以组件渲染功能被改到了组件内部
+例如：首页由Homepage，Homepagecontent，Zmd,Footer组成，已确定Zmd是一定存在首页的，
+所以，将路由的第一路径改为Zmd，然后在Zmd.js文件内渲染Homeapge,Homepagecontent,footer这三个组件

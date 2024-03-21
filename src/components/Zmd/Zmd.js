@@ -2,8 +2,11 @@ import React from 'react';
 import "./Zmd.css"
 import { Carousel } from 'antd';
 import image01 from '../../assets/image01.png';
+import HomepagContent from '../HomepageContent/HomepageContent';
+import Header from '../Header/Header';
 function Zmd() {
   return (
+    <>
     <div className="carousel-container">
       <Carousel autoplay>
         <div className="carousel-container">
@@ -20,6 +23,7 @@ function Zmd() {
         </div>
       </Carousel>
     </div>
+    </>
   );
 }
 

@@ -10,8 +10,22 @@
     display: inline-block;
   }
 
+  /* after:一种伪元素选择器，用于在被选元素的后面插入内容，通常配合content属性指定要插入的内容*/
+  .index-tit-con:after {
+    content: '';
+    position: absolute;
+    width: 3rem;
+    height: 2px;
+    left: 50%;
+    bottom: -0.5rem;
+    transform: translateX(-50%);
+    background: #00e5ff;
+}
+
   .accordion-container {
-    padding: inherit; /*从父元素继承padding属性，在此处保证两边不留白*/
+
+    padding: 0; /*从父元素继承padding属性，在此处保证两边不留白*/
+    margin: 0;  /*控制手风琴部分与footer之间是否留白，mairgin：0 即不留白*/
     overflow: hidden;
     display: flex;
     justify-content: flex-start;
@@ -58,13 +72,7 @@
     }
   }
 
-  .accordion-container {
-    padding: 0;
-    overflow: hidden;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start
-}
+
 accordion-container .accordion-item[data-v-36fadeda] {
     list-style: none;
     height: 500px;
@@ -77,8 +85,9 @@ accordion-container .accordion-item[data-v-36fadeda] {
     justify-content: center;
     align-items: center
 }
+/*控制手风琴内部件Li的大小，因从5个展示位调整到3个展示位，原值为20%，现需调整为34%*/
 .accordion-container .accordion-item:not(:hover) {
-    width: 20%
+    width: 34%
 }
 
 .accordion-container .accordion-item:hover {
@@ -108,4 +117,14 @@ accordion-container .accordion-item[data-v-36fadeda] {
     z-index: 2
 }
 
+.content-container{
+  display: flex;
+  justify-content: center;
+}
 
+.accordion-item span {
+  /* 将 span 转换为块级元素，这样它会在新的一行上显示 */
+  display: block;
+  /* 还可以添加一些样式，比如边距，来更好地控制布局 */
+  margin-top: 10px; /* 添加顶部边距来与上面的内容分隔 */
+}

@@ -1,9 +1,11 @@
 import React from 'react';
 import './Productpage.css'
 import Eiffel from '../../assets/Eiffel.jpg'
-
+import Header from '../Header/Header';
 function Productpage() {
     return (
+        <>
+        <Header />
         <div>
             
             <div className='productpage-card'>
@@ -26,6 +28,7 @@ function Productpage() {
                 </div>
             </div>
         </div>
+        </>
     );
 }
 

@@ -1,0 +1,76 @@
+.Homepage-ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    height: 79px;
+    width: 45%;
+    margin: auto;
+}
+
+.Homepage-li {
+    display: inline;
+    float: left;
+    height: inherit;
+    width: 20%;
+    margin-top: 3vh;
+    position: relative;
+    /* 添加相对定位，用于下划线的绝对定位 */
+}
+
+.Homepage-li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+    position: relative;
+}
+
+.Homepage-li a::before {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    /*调整下划线与文本间的距离*/
+    left: 0px;  
+    /*调整下划线与文本对齐*/
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, #b47dcd, #e878a2, #eb85ab);
+    z-index: 1;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s ease-in-out;
+}
+
+.Homepage-li a:hover::before {
+    transform: scaleX(1);
+}
+
+.Homepage-Header {
+    background-color: rgb(255, 255, 255);
+}
+
+
+
+
+.fl {
+    float: left;
+}
+
+.logo {
+    width: 85%;
+
+}
+
+.logo {
+    width: 15rem;
+    height: auto;
+    margin: 1rem;
+}
+
+.nav_t ul.header-navbar-level1 {
+    display: flex;
+    justify-content: space-between;
+    height: 79px;
+    width: 45%;
+    margin: auto;
+}
