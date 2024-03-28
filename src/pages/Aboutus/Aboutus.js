@@ -1,4 +1,5 @@
-import Header from "../Header/Header";
+import { Footer } from "antd/es/layout/layout";
+import Header from "../../components/Header/Header";
 
 function Aboutus() {
     return(
@@ -7,6 +8,7 @@ function Aboutus() {
         <div>
 
         </div>
+        <Footer/>
         </>
     );
 }

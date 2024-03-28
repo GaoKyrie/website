@@ -4,8 +4,8 @@
     border: 1px solid #ddd;
     border-radius: 5px;
     overflow: hidden;
-    box-shadow: 4px 4px 8px rgba(0, 0, 0,1);
-    background-color: gray;
+    box-shadow: 4px 4px 8px rgb(81, 77, 77);
+    background-color: rgb(255, 255, 255);
   }
   
   .image-container {

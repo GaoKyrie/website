@@ -2,6 +2,7 @@ import React from 'react';
 import './Productpage.css'
 import Eiffel from '../../assets/Eiffel.jpg'
 import Header from '../Header/Header';
+import { Footer } from 'antd/es/layout/layout';
 function Productpage() {
     return (
         <>
@@ -28,6 +29,7 @@ function Productpage() {
                 </div>
             </div>
         </div>
+        <Footer/>
         </>
     );
 }

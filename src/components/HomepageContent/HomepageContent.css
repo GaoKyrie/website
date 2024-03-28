@@ -24,6 +24,7 @@
 
   .accordion-container {
 
+    justify-content: space-around; /* 平均分配项目 */
     padding: 0; /*从父元素继承padding属性，在此处保证两边不留白*/
     margin: 0;  /*控制手风琴部分与footer之间是否留白，mairgin：0 即不留白*/
     overflow: hidden;
@@ -89,9 +90,9 @@ accordion-container .accordion-item[data-v-36fadeda] {
 .accordion-container .accordion-item:not(:hover) {
     width: 34%
 }
-
+/*调整鼠标放上去时的图片放大后的大小，即扩大程度*/
 .accordion-container .accordion-item:hover {
-    width: 500px
+    width: 600px
 }
 
 .accordion-container .accordion-item:hover:after {
@@ -120,11 +121,8 @@ accordion-container .accordion-item[data-v-36fadeda] {
 .content-container{
   display: flex;
   justify-content: center;
+
+  width: 100%;
+  margin: 0 auto; /* 居中显示 */
 }
 
-.accordion-item span {
-  /* 将 span 转换为块级元素，这样它会在新的一行上显示 */
-  display: block;
-  /* 还可以添加一些样式，比如边距，来更好地控制布局 */
-  margin-top: 10px; /* 添加顶部边距来与上面的内容分隔 */
-}

@@ -54,3 +54,7 @@
 .footer-titflex > .footer-tit3{
   float: left;
 }
+
+a{
+  text-decoration: none;
+}
